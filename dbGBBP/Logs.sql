@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Logs]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [Created] DATETIME2 NOT NULL DEFAULT SYSDATETIME(), 
+    [Application] VARCHAR(20) NOT NULL, 
+    [Severity] INT NOT NULL, 
+    [Message] VARCHAR(MAX) NOT NULL
+)

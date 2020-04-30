@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Blockchains]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [Name] VARCHAR(20) NOT NULL
+)

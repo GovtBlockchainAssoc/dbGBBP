@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[TokenEvents]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+    [TxHash] VARCHAR(50) NOT NULL,
+    [Block] INT NOT NULL,
+    [Operation] VARCHAR(20) NOT NULL,
+    [Token] VARCHAR(10) NOT NULL,
+    [FromChain] VARCHAR(50) NULL,
+    [FromBlock] INT NULL,
+    [FromAddr] VARCHAR(50) NULL, 
+    [ToAddr] VARCHAR(50) NULL, 
+    [Value] DECIMAL(28,12) NULL, 
+    [Memo] VARCHAR(50) NULL , 
+    [ClaimBy] VARCHAR(50) NULL,
+    [ClaimBlock] INT,
+    [Fee] DECIMAL(28,12) NULL ,
+    [DestChain] VARCHAR(50) NULL,
+    [DestBlock] INT, 
+    [DestAddr] VARCHAR(50) NULL, 
+    [Created] DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
+    [Updated] DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
+)
