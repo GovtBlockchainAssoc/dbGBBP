@@ -140,6 +140,7 @@
     <Build Include="GBAMemberships.sql" />
     <Build Include="GBAProfileData.sql" />
     <Build Include="GBAProfileFields.sql" />
+    <Build Include="spWalletLogin.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbGBBP.publish.xml" />
