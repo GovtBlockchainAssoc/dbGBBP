@@ -2,7 +2,7 @@
 	@pTxHash varchar(50), @pEvent varchar(20), @pToken VARCHAR(10) = '', @pFromChain VARCHAR(50) = '', @pFromBlock INT = 0, @pFromAddr VARCHAR(50) = '', 
     @pToAddr VARCHAR(50) = '', @pValue DECIMAL(28,12) = 0, @pMemo VARCHAR(50) = '', 
     @pClaimBy VARCHAR(50) = '', @pClaimBlock INT = 0, @pFee DECIMAL(28,12) = 0,
-    @pDestChain VARCHAR(50) = '', @pDestBlock INT = 0, @pDestAddr VARCHAR(50) = ''
+    @pDestChain VARCHAR(50) = '', @pDestBlock VARCHAR(50) = '', @pDestAddr VARCHAR(50) = ''
 AS
 	-- A MemoTransfer will always generate a Transfer but either can come first and we don't want duplicates
 

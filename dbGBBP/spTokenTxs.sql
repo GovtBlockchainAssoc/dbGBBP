@@ -45,6 +45,6 @@ UPDATE @Txs SET Balance = tt.Balance FROM @Txs t INNER JOIN @TokenTxs tt ON tt.I
 
 -- SELECT * FROM @Tokens
 -- SELECT * FROM @Txs ORDER BY DTS Desc, Id Desc
-SELECT (SELECT * FROM @Tokens FOR JSON PATH) AS table1, (SELECT * FROM @Txs ORDER BY Date_Time Desc, Id Desc FOR JSON PATH) AS table2 FOR JSON PATH
+SELECT (SELECT * FROM @Tokens FOR JSON PATH) AS table1, (SELECT * FROM @Txs ORDER BY Updated Desc, Id Desc FOR JSON PATH) AS table2 FOR JSON PATH
 
 RETURN 0

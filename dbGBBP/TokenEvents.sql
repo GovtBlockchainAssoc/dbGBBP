@@ -15,7 +15,7 @@
     [ClaimBlock] INT,
     [Fee] DECIMAL(28,12) NULL ,
     [DestChain] VARCHAR(50) NULL,
-    [DestBlock] INT, 
+    [DestBlock] VARCHAR(50), 
     [DestAddr] VARCHAR(50) NULL, 
     [Created] DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
     [Updated] DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
