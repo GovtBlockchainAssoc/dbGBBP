@@ -141,6 +141,9 @@
     <Build Include="GBAProfileData.sql" />
     <Build Include="GBAProfileFields.sql" />
     <Build Include="spWalletLogin.sql" />
+    <Build Include="TokenEventsH.sql" />
+    <Build Include="TokenTxsH.sql" />
+    <Build Include="spTokenEventH.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dbGBBP.publish.xml" />

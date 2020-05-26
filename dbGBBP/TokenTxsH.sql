@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[TokenTxsH]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+    [TxHash] VARCHAR(50) NOT NULL,
+    [Token] VARCHAR(10) NOT NULL,
+    [FromChain] VARCHAR(20) NOT NULL,
+    [FromBlock] VARCHAR(20) NOT NULL,
+    [FromAddr] VARCHAR(50) NOT NULL, 
+    [ToAddr] VARCHAR(50) NOT NULL, 
+    [Value] DECIMAL(28,12) NOT NULL, 
+    [Memo] VARCHAR(50) NULL , 
+    [ClaimBy] VARCHAR(20) NULL ,
+    [ClaimBlock] VARCHAR(20) NULL ,
+    [Fee] DECIMAL(28,12) NULL ,
+    [DestChain] VARCHAR(20) NULL,
+    [DestBlock] VARCHAR(20) NULL , 
+    [DestAddr] VARCHAR(50) NULL, 
+    [Created] DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
+    [Updated] DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
+)
